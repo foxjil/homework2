@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Подбор квартиры</title>
+    </head>
+    <body>
+        <form action="#" method="POST">
+            <div>
+                <label for="metro">Выбор станции метро</label>
+                <select id="metro">
+                    <optgroup label="Красная линия">
+                        <option value="devyatkino">Девяткино</option>
+                        <option value="akademicheskaya">Академическая</option>
+                        <option value="lesnaya">Лесная</option>
+                        <option value="avtovoo">Автово</option>
+                        <option value="veteranov">Проспект Ветеранов</option>
+                    </optgroup>
+                    <optgroup label="Синия линия">
+                        <option value="parnas">Парнас</option>
+                        <option value="ozerki">Озерки</option>
+                        <option value="pionerskaya">Пионерская</option>
+                        <option value="frunzenskaya">Фрунзенская</option>
+                        <option value="kupchino">Купчино</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="number">Количество комнат</label>
+                <input type="number" 
+                         placeholder="кол-во"
+                        type="number"
+                        max="5"
+                        min="1">
+            </div>
+            <div>
+                <label for="year">Год сдачи дома</label>
+                <input type="date">
+            </div>
+            <div>
+                <label for="price">Максимальная стоимость</label>
+                <input id="price"
+                        type="number"
+                        name="price"
+                        min="100"
+                        step="50">
+                        
+            </div>
+            <div>
+                <label for="square">Общая площадь</label>
+                <input type="number"
+                        type="number"
+                        name="square"
+                        max="500"
+                        step="100">
+            </div>
+            <div>
+                
+                </select>
+            </div>
+            <div>
+                <label for="interior">С отделкой квартиры</label>
+                <input type="radio" 
+                        name="interior"
+                        value="first">
+
+            </div>
+            <div>
+                <label for="terrace">С террасой</label>
+                <input type="radio"
+                        name="terrace"
+                        value="second">
+            </div>
+            <div>
+                <h4>Выбор класса</h4>
+                <label>
+                    Бизнес-класс
+                    <input type="checkbox" name="additional[]" value="class">
+                </label>
+                <label>
+                    Премиум
+                    <input type="checkbox" name="additional []" value="premium">
+                </label>
+                <label>
+                    Deluxe
+                    <input type="checkbox" name="additional[]" value="Deluxe">
+                </label>
+            </div>
+            <div>
+                <h4>Выбор этажа</h4>
+                <datalist id="floor">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="Не первый">
+                    <option value="Не последний">
+
+                </datalist>
+                <input type="text" list="floor">
+            </div>
+        </form>
+    </body>
+</html>
